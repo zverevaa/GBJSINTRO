@@ -8,7 +8,7 @@
 */
 
 function makeCube(number) {
-  return number * number * number;
+  return number ** 3;
 }
 
 console.log(makeCube(5));

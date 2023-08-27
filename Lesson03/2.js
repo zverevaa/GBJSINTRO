@@ -12,14 +12,14 @@
 const input = prompt("Введите число");
 
 function calculateSalary(input) {
-  if (!isNaN(input) && input > 0) {
-    return (
+  if (!Number.isNaN(input) && input > 0) {
+    console.log(
       "Размер заработной платы за вычетом налогов равен " +
-      (input - input * 0.13).toFixed(2)
+        (input - input * 0.13).toFixed(2)
     );
   } else {
-    return "Значение задано неверно";
+    console.log("Значение задано неверно");
   }
 }
 
-console.log(calculateSalary(input));
+calculateSalary(input);

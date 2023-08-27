@@ -25,11 +25,8 @@ function sum(a, b) {
 function difference(a, b) {
   if (a > b) {
     return a - b;
-  } else if (a < b) {
-    return b - a;
-  } else {
-    return 0;
   }
+  return b - a;
 }
 
 function multiplication(a, b) {
